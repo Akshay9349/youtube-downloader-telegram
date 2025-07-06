@@ -1,11 +1,14 @@
 {
-  "input_file": "url_input/urls.txt",
   "download_path": "Youtube Downloads",
   "log_path": "Logs",
-  "auto_mode": false,
+  "input_file": "url_input/urls.txt",
   "media_type": "video",
   "quality": "720",
   "compress": true,
+  "upload_after_zip": true,
   "ask_password_each_time": true,
-  "zip_password": ""
+  "telegram_api_id": 123456,
+  "telegram_api_hash": "your_hash",
+  "telegram_session": "session_name",
+  "telegram_target_chat": "@your_channel"
 }
