@@ -1,0 +1,39 @@
+# Byte-compiled / cache
+__pycache__/
+*.py[cod]
+*.so
+
+# Virtual environments
+.venv/
+env/
+venv/
+
+# Logs and summaries
+Logs/
+Summaries/
+*.log
+*.tmp
+
+# Partial download artifacts
+*.part
+*.part.*
+
+# Output ZIPs and large download folders
+Youtube Downloads/
+
+# URLs and backup files
+url_input/*.txt
+url_backup/
+
+# Python and tool config
+config.json
+zip_passlog.json
+telegram_upload_log.json
+
+# IDE / editor
+.vscode/
+.idea/
+
+# System
+.DS_Store
+Thumbs.db
