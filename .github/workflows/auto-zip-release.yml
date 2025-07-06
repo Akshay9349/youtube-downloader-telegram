@@ -1,0 +1,33 @@
+name: Auto ZIP on Release
+
+on:
+  release:
+    types: [published]
+
+jobs:
+  build-zip:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: 3.9
+
+    - name: Remove unneeded folders
+      run: |
+        rm -rf "Youtube Downloads" Logs Summaries .git
+
+    - name: Create ZIP
+      run: |
+        zip -r youtube-downloader-telegram.zip . -x '*.git*' '*.idea*' '__pycache__*'
+
+    - name: Upload ZIP to Release
+      uses: softprops/action-gh-release@v1
+      with:
+        files: youtube-downloader-telegram.zip
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
