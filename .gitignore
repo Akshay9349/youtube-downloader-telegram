@@ -22,7 +22,6 @@ Summaries/
 Youtube Downloads/
 
 # URLs and backup files
-url_input/*.txt
 url_backup/
 
 # Python and tool config
