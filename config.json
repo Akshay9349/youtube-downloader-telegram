@@ -1,0 +1,11 @@
+{
+  "input_file": "url_input/urls.txt",
+  "download_path": "Youtube Downloads",
+  "log_path": "Logs",
+  "auto_mode": false,
+  "media_type": "video",
+  "quality": "720",
+  "compress": true,
+  "ask_password_each_time": true,
+  "zip_password": ""
+}

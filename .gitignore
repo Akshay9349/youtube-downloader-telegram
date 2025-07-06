@@ -1,0 +1,35 @@
+# 🐍 Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.log
+
+# 📦 Virtual Environments
+.venv/
+venv/
+ENV/
+env/
+*.env
+
+# 💻 System Files
+.DS_Store
+Thumbs.db
+
+# 📤 Output Files (optional to keep repo clean)
+stats.html
+*.zip
+*.pdf
+
+# 📋 Logs & Sensitive Info
+zip_passlog.json
+telegram_upload_log.json
+
+# 📄 IDE Files (optional)
+.vscode/
+.idea/
+*.iml
+
+# 🧪 Test / Temporary Files
+*.tmp
+*.bak
